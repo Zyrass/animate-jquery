@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+::selection {
+    
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    background-color: #c5c5c5;
+}
+
+header {
+    width: 0 auto;
+    height: 150px;
+    background-color: #000;
+    border-bottom: 5px solid #333;
+
+    h1 {
+        line-height: 150px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+main {
+    background-color: #c5c5c5;
+    width: 100%;
+    height: 285px;
+
+    div#grpButton {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+
+        #firstButton, #secondButton {
+            position: absolute;
+            width: 150px;
+            height: 50px;
+            background-color: #333;
+            border: none;
+            color: #fff;
+            font-size: 1em;
+            top: 106px;
+            box-shadow: 0 0 10px #000;
+            cursor: pointer;
+        }
+        #firstButton:hover, #secondButton:hover {
+            transition: background 1s linear;
+            background-color: #c5c5c5;
+            transition: color .1s linear .1s;
+            color: #333;
+            cursor: pointer;
+        }
+         #firstButton {
+            border-radius: 5px 0 0 5px;
+            left: -110px;
+        }
+         #secondButton {
+            border-radius: 0 5px 5px 0;
+            right: -120px;
+        }
+        img {
+            margin: 20px 0;
+            box-shadow: 0 0 10px #000;
+        }
+    } // fin div#grpButton
+
+    section {
+        background-color: #ccc;
+        padding: 25px;
+
+
+        hr {
+            width: 60%;
+            margin: 0 auto;
+            opacity: .5;
+        }
+
+        article {
+            margin: 20px;
+        }
+
+        #firstArticle {
+            width: 80%;
+            margin: 0 auto;
+            display: none;       
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                padding: 0 25px;
+                border-left: 2px solid #333;
+                border-right: 2px solid #333;
+                word-spacing: 9px;
+                letter-spacing: 3px;
+            }
+            
+            p::first-letter {
+                font-size: 2em;
+                float: left;
+                margin-right: 15px;
+                margin-bottom: 5px;
+                margin-top: 10px;
+            
+                span {
+                    clear: left;
+                }
+            }
+        } // fin #firstArticle
+
+        #secondArticle {
+            width: 50%;
+            margin: 50px auto;
+            display: none;
+
+            img {
+                border: 5px solid #fff;
+            }
+        } // fin #secondArticle
+
+    } // fin section 
+
+    footer {
+        width: 100%;
+        height: 50px;
+        background-color: #000;
+        border-top: 5px solid #333;
+
+        p {
+            color: #fff;
+            text-align:center;
+        }
+    }
+} // fin main
+
+
