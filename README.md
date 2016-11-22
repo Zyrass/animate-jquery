@@ -1,4 +1,4 @@
-# animate-jquery
+# animations-jquery
 Intégration Personel - ( Exercice : "Créer 2 animations en JQuery" )
 
 Je m'entraîne pour l'acquisition de mon diplôme à la 3WA.
